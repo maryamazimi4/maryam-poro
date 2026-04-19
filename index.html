@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maryam Azimi — Web Developer Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-dot"></span>Maryam<span class="brand-accent">.dev</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-label="Toggle navigation">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+      Hero Home
+  ═══════════════════════════════════════ -->
+  <section id="home" class="hero-home ">
+    <!-- Animated grid background -->
+    <div class="grid-bg" aria-hidden="true"></div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-7 hero-text" data-animate="fadeUp">
+          <p class="hero-greeting">Hello, World! 👋</p>
+          <h1 class="hero-title">
+            I'm <span class="gold-text">Maryam Azimi</span><br/>
+            <span class="hero-subtitle-role">Web Developer</span><br/>
+            <span class="hero-subtitle-role delay-1">Front-End Developer</span><br/>
+            <span class="hero-subtitle-role delay-2">Computer Science Student</span>
+          </h1>
+          <p class="hero-desc">
+            I am a computer science student passionate about web development
+            and modern interface design.
+            
+          </p>
+          <div class="hero-cta d-flex flex-wrap gap-3 mt-4">
+            <a href="#projects" class="btn btn-gold">See My Projects</a>
+            <a href="#contact" class="btn btn-outline-gold">Contact Me</a>
+          </div>
+          <!-- Social icons -->
+          <div class="social-links mt-5">
+            <a href="https://github.com/maryam-azimi" target="_blank" aria-label="GitHub" class="social-icon">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://t.me/username" target="_blank" aria-label="Telegram" class="social-icon">
+              <i class="bi bi-telegram"></i>
+            </a>
+            <a href="https://wa.me" target="_blank" aria-label="WhatsApp" class="social-icon">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="mailto:maryamazimi.dev@gmail.com" class="social-icon"><i class="bi bi-envelope-fill"></i></a>
+
+
+            
+          </div>
+        </div>
+
+        <!-- Hero image column -->
+        <div class="col-lg-5 d-flex justify-content-center mt-5 mt-lg-0" data-animate="fadeLeft">
+          <div class="hero-img-wrapper">
+            <div class="hero-img-frame">
+              <img
+                src="imges/profile.jpg"
+                alt="Developer at work"
+                class="hero-img"
+              />
+              <!-- Floating badge -->
+              <div class="floating-badge">
+                <span class="badge-dot"></span>
+                Available for work
+              </div>
+            </div>
+            <!-- Decorative corner lines -->
+            <div class="corner-tl" aria-hidden="true"></div>
+            <div class="corner-br" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════════ -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-animate="fadeUp">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="gold-text">Me</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-animate="fadeRight">
+          <div class="about-img-wrapper">
+            <img
+              src="imges/about.jpg"
+              alt="Working on code"
+              class="about-img"
+            />
+            <!-- Stats overlays -->
+            <div class="stat-card stat-card-1">
+              <span class="stat-num">1+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+            <div class="stat-card stat-card-2">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-animate="fadeLeft">
+          <h3 class="about-name">
+           Maryam Azimi <span class="gold-text">—</span> Web Developer
+             </h3>
+          <p class="about-bio">
+            I am a computer science student passionate about web development and modern interface design.
+             I enjoy learning new technologies and building responsive websites using HTML, CSS and JavaScript.
+               </p>
+          <p class="about-bio">
+            My journey into programming started with learning the basics of web development.
+
+            Since then I have been improving my skills by building projects and exploring new tools.
+
+          </p>
+          <p class="about-bio">
+            
+            Outside of coding, I enjoy exploring new design ideas and improving my development skills.
+          </p>
+
+          <!-- Fun facts -->
+          <div class="fun-facts mt-4">
+            <div class="fun-fact"><i class="bi bi-geo-alt-fill gold-text"></i>Computer Science Student & Front-End Developer </div>
+            <div class="fun-fact"><i class="bi bi-mortarboard-fill gold-text"></i> Passionate about Web Development</div>
+            <div class="fun-fact"><i class="bi bi-heart-fill gold-text"></i> Love learning new technologies</div>
+          </div>
+
+          <a href="#projects" class="btn btn-gold mt-4">See My Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SKILLS SECTION
+  ═══════════════════════════════════════ -->
+  <section id="skills" class="section-padding skills-section">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-animate="fadeUp">
+        <span class="section-tag">What I do</span>
+        <h2 class="section-title">My <span class="gold-text">Skills</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Skill card 1 -->
+        <div class="col-md-6 col-lg-3" data-animate="fadeUp" data-delay="0">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="bi bi-filetype-html"></i>
+            </div>
+            <h4>HTML / CSS</h4>
+            <p>Semantic, accessible markup paired with modern, responsive styling techniques.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            <span class="skill-pct">90%</span>
+          </div>
+        </div>
+        <!-- Skill card 2 -->
+        <div class="col-md-6 col-lg-3" data-animate="fadeUp" data-delay="100">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="bi bi-bootstrap-fill"></i>
+            </div>
+            <h4>Bootstrap</h4>
+            <p>Building grid-based, component-rich layouts with customized Bootstrap systems.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <span class="skill-pct">85%</span>
+          </div>
+        </div>
+        <!-- Skill card 3 -->
+        <div class="col-md-6 col-lg-3" data-animate="fadeUp" data-delay="200">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="bi bi-braces"></i>
+            </div>
+            <h4>JavaScript / React</h4>
+            <p>Dynamic, interactive interfaces powered by modern JavaScript and React hooks.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            <span class="skill-pct">78%</span>
+          </div>
+        </div>
+        <!-- Skill card 4 -->
+        <div class="col-md-6 col-lg-3" data-animate="fadeUp" data-delay="300">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="bi bi-palette2"></i>
+            </div>
+            <h4>Git</h4>
+               <p>Version control system used to manage and track code changes.</p>
+                 <div class="skill-bar">
+                   <div class="skill-fill" data-width="70"></div>
+                     </div>
+                         <span class="skill-pct">70%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech stack badges -->
+      <div class="tech-stack mt-5 text-center" data-animate="fadeUp">
+        <p class="tech-label mb-3">Also familiar with:</p>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <span class="tech-badge">Git</span>
+              <span class="tech-badge">GitHub</span>
+                  <span class="tech-badge">VS Code</span>
+                       <span class="tech-badge">Bootstrap</span>
+                      <span class="tech-badge">Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- ═══════════════════════════════════════
+     PROJECTS SECTION
+═══════════════════════════════════════ -->
+<section id="projects" class="section-padding">
+  <div class="container">
+
+    <div class="section-header text-center mb-5" data-animate="fadeUp">
+      <span class="section-tag">My work</span>
+      <h2 class="section-title">Featured <span class="gold-text">Projects</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4" data-animate="fadeUp">
+        <div class="project-card">
+
+          <div class="project-video-wrapper">
+            <video class="project-video" muted loop>
+              <source src="videos/htmlcss.mp4" type="video/mp4">
+            </video>
+
+            <div class="project-overlay">
+              <span class="project-tag">HTML / CSS</span>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <h4 class="project-title">HTML / CSS Website</h4>
+            <p class="project-desc">
+              A responsive website built using HTML and CSS demonstrating layout design and modern styling techniques.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-4" data-animate="fadeUp" data-delay="100">
+        <div class="project-card">
+
+          <div class="project-video-wrapper">
+            <video class="project-video" muted loop>
+              <source src="videos/js.mp4" type="video/mp4">
+            </video>
+
+            <div class="project-overlay">
+              <span class="project-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <h4 class="project-title">Interactive Quiz App</h4>
+            <p class="project-desc">
+              A dynamic quiz application using vanilla JavaScript and DOM manipulation.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-4" data-animate="fadeUp" data-delay="200">
+        <div class="project-card">
+
+          <div class="project-video-wrapper">
+            <video class="project-video" muted loop>
+              <source src="videos/react.mp4" type="video/mp4">
+            </video>
+
+            <div class="project-overlay">
+              <span class="project-tag">React</span>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <h4 class="project-title">Portfolio Dashboard</h4>
+            <p class="project-desc">
+              A React-based dashboard with modern components and interactive UI.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-6 col-lg-4" data-animate="fadeUp" data-delay="300">
+        <div class="project-card">
+
+          <div class="project-video-wrapper">
+            <video class="project-video" muted loop>
+              <source src="videos/uiux.mp4" type="video/mp4">
+            </video>
+
+            <div class="project-overlay">
+              <span class="project-tag">UI / UX</span>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <h4 class="project-title">E-Commerce UI Design</h4>
+            <p class="project-desc">
+              UI and UX design concept for an e-commerce platform with modern layout and usability.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="col-md-6 col-lg-4" data-animate="fadeUp" data-delay="400">
+        <div class="project-card">
+
+          <div class="project-video-wrapper">
+            <video class="project-video" muted loop>
+              <source src="videos/bootstrap.mp4" type="video/mp4">
+            </video>
+
+            <div class="project-overlay">
+              <span class="project-tag">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <h4 class="project-title">Bootstrap Blog Template</h4>
+            <p class="project-desc">
+              Responsive blog layout built using Bootstrap grid and modern components.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="col-md-6 col-lg-4" data-animate="fadeUp" data-delay="500">
+        <div class="project-card project-card-cta">
+
+          <div class="cta-card-inner">
+            <i class="bi bi-github cta-icon"></i>
+            <h4>More on GitHub</h4>
+            <p>Explore more of my projects and experiments on GitHub.</p>
+
+            <a href="https://github.com/maryam-azimi" target="_blank" class="project-link">
+              Visit GitHub <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        
+
+
+
+  <!-- ═══════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════ -->
+  <section id="contact" class="section-padding contact-section">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-animate="fadeUp">
+        <span class="section-tag">Let's connect</span>
+        <h2 class="section-title">Get In <span class="gold-text">Touch</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="row g-5 align-items-start">
+        <!-- Contact info -->
+        <div class="col-lg-5" data-animate="fadeRight">
+          <div class="contact-info">
+            
+<h3 class="contact-heading">
+Let's <span class="gold-text">work</span> together.
+</h3>
+
+            <p class="contact-sub">
+              I'm always open to new opportunities, collaborations, and interesting projects.
+              Drop me a message and I'll get back to you soon! ✨
+            </p>
+
+            <div class="contact-links mt-4">
+              <a href="https://github.com" target="_blank" class="contact-link-item">
+                <div class="contact-link-icon"><i class="bi bi-github"></i></div>
+                <div>
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-val">github.com/maryam-azimi</span>
+                </div>
+              </a>
+              <a href="https://t.me/maryam_dev" target="_blank" class="contact-link-item">
+                <div class="contact-link-icon"><i class="bi bi-telegram"></i></div>
+                <div>
+                  <span class="contact-link-label">Telegram</span>
+                   <span class="contact-link-val">@maryam_dev</span> 
+                </div>
+              </a>
+              <a href="https://wa.me/0796409341" target="_blank" class="contact-link-item">
+                <div class="contact-link-icon"><i class="bi bi-whatsapp"></i></div>
+                <div>
+                  <span class="contact-link-label">WhatsApp</span>
+                  <span class="contact-link-val">Available on request</span>
+                </div>
+              </a>
+              
+<a href="mailto:maryamazimi.dev@gmail.com" class="contact-link-item">
+
+<div class="contact-link-icon">
+<i class="bi bi-envelope-fill"></i>
+</div>
+
+<div>
+<span class="contact-link-label">Email</span>
+<span class="contact-link-val">maryamazimi.dev@gmail.com</span>
+</div>
+
+</a>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="col-lg-7" data-animate="fadeLeft">
+          <div class="contact-form-wrapper">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-control custom-input" placeholder="John Doe"/>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control custom-input" placeholder="john@example.com"/>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Subject</label>
+                <input type="text" class="form-control custom-input" placeholder="Project Inquiry"/>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control custom-input" rows="5" placeholder="Tell me about your project..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="button" class="btn btn-gold w-100" onclick="sendMessage()">
+                  Send Message <i class="bi bi-send-fill ms-2"></i>
+                </button>
+              </div>
+              <div id="formFeedback" class="col-12"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ═══════════════════════════════════════
+     PREMIUM BRAND STRIP
+═══════════════════════════════════════ -->
+
+<section class="brand-premium">
+
+<div class="brand-wrapper">
+
+<div class="brand-marquee">
+
+<img src="logos/google.svg" alt="Google">
+<img src="logos/apple.svg" alt="Apple">
+<img src="logos/microsoft.svg" alt="Microsoft">
+<img src="logos/figma.svg" alt="Figma">
+<img src="logos/adobe.svg" alt="Adobe">
+<img src="logos/github.svg" alt="GitHub">
+
+<!-- duplicate for seamless loop -->
+
+<img src="logos/google.svg" alt="Google">
+<img src="logos/apple.svg" alt="Apple">
+<img src="logos/microsoft.svg" alt="Microsoft">
+<img src="logos/figma.svg" alt="Figma">
+<img src="logos/adobe.svg" alt="Adobe">
+<img src="logos/github.svg" alt="GitHub">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">Maryam<span class="gold-text">.dev</span></div>
+        <p class="footer-tagline">Crafted with <span class="gold-text">♥</span> and a lot of ☕</p>
+        <div class="footer-socials">
+          <a href="https://github.com/maryam-azimi" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+          <a href="https://wa.me" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="mailto:maryamazimi.dev@gmail.com" aria-label="Email">
+<i class="bi bi-envelope-fill"></i>
+</a>
+        </div>
+        <p class="footer-copy">© 2026 Maryam.Azimi — All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
